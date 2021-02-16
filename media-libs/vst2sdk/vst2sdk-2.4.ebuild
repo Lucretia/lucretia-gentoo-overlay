@@ -24,7 +24,6 @@ RESTRICT="mirror nostrip fetch"
 LICENSE="STEINBERG-VST2-EULA"
 SLOT="0"
 KEYWORDS="x86 amd64"
-FAETURES="-xattr"
 IUSE=""
 
 DEPEND="app-arch/unzip"
