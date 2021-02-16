@@ -7,6 +7,8 @@ You will find packages I think are useful and grabbed from various locations or 
 * media-libs/
   * [asio-sdk](https://gpo.zugaina.org/AJAX/Ebuild/38403542/View) (Original ebuild)
     * [2.3.3](./media-libs/asio-sdk/../asiosdk/asiosdk-2.3.3.ebuild)
+  * vst2sdk
+    * [2.4](./media-libs/vst2sdk/vst2sdk-2.4.ebuild)
 * media-plugins/
   * [gxplugins-lv2](https://gpo.zugaina.org/AJAX/Ebuild/27861632) (Original ebuild)
     * [9999](./media-plugins/gxplugins-lv2/gxplugins-lv2-9999.ebuild)
