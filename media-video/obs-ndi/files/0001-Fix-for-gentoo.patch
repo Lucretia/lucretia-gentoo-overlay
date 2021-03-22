@@ -1,0 +1,24 @@
+From 8e9c968673ea6fc2b83b06adc843ed5d395e855f Mon Sep 17 00:00:00 2001
+From: "Luke A. Guest" <laguest@archeia.com>
+Date: Mon, 22 Mar 2021 14:37:27 +0000
+Subject: [PATCH] Fix for gentoo.
+
+---
+ src/obs-ndi.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/obs-ndi.cpp b/src/obs-ndi.cpp
+index 673c9e1..93c7827 100644
+--- a/src/obs-ndi.cpp
++++ b/src/obs-ndi.cpp
+@@ -200,6 +200,7 @@ const NDIlib_v4* load_ndilib()
+ 	locations << QString(qgetenv(NDILIB_REDIST_FOLDER));
+ #if defined(__linux__) || defined(__APPLE__)
+ 	locations << "/usr/lib";
++	locations << "/usr/lib64";
+ 	locations << "/usr/local/lib";
+ #endif
+ 
+-- 
+2.31.0
+

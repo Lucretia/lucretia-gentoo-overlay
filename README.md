@@ -24,3 +24,5 @@ You will find packages I think are useful and grabbed from various locations or 
 * media-video/
   * [ndi-sdk](https://gpo.zugaina.org/AJAX/Ebuild/43486515/View) (Original ebuild)
     * [4.5.1](./media-video/ndi-sdk/ndi-sdk-4.5.1.ebuild)
+  * obs-ndi
+    * [9999](./media-video/obs-ndi/obs-ndi-9999.ebuild)
