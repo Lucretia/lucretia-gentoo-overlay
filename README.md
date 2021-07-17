@@ -14,6 +14,9 @@ You will find packages I think are useful and grabbed from various locations or 
 * media-plugins/
   * [gxplugins-lv2](https://gpo.zugaina.org/AJAX/Ebuild/27861632) (Original ebuild)
     * [9999](./media-plugins/gxplugins-lv2/gxplugins-lv2-9999.ebuild)
+* media-gfx/
+  * [flamegraph](https://data.gpo.zugaina.org/SoniFrog/media-gfx/flamegraph/) Original ebuild.
+    * [1.0](./media-gfx/flamegraph/flamegraph-1.0.ebuild)
 * media-sound/
   * [surge](https://github.com/gentoo-audio/audio-overlay/issues/298) (Original ebuild)
     * [1.8.1](./media-sound/surge/surge-1.8.1.ebuild)
