@@ -32,3 +32,7 @@ You will find packages I think are useful and grabbed from various locations or 
     * [4.6.2](./media-video/ndi-sdk/ndi-sdk-4.6.2.ebuild)
   * obs-ndi
     * [9999](./media-video/obs-ndi/obs-ndi-9999.ebuild)
+
+## TODO
+
+* How can I get emerge to rebuild wineasio when a slotted wine-staging it removed?
