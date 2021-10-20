@@ -19,12 +19,6 @@ DEPEND="virtual/wine
 		virtual/jack
 		${RDEPEND}"
 
-# S="${WORKDIR}/${PN}-${PV}"
-
-# PATCHES=(
-# 	"${FILESDIR}/0001-Create-the-fake-DLL-s.patch"
-# )
-
 src_prepare()
 {
 	epatch "${FILESDIR}/0001-Create-the-fake-DLL-s.patch"
