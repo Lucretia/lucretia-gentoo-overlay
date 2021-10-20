@@ -1,0 +1,35 @@
+From ac17bca105540a618518ae95127c5accb764f1f3 Mon Sep 17 00:00:00 2001
+From: "Luke A. Guest" <laguest@archeia.com>
+Date: Tue, 19 Oct 2021 23:08:31 +0100
+Subject: [PATCH] Create the fake DLL's.
+
+---
+ Makefile    | 2 +-
+ Makefile.mk | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 76a566e..bebc24b 100644
+--- a/Makefile
++++ b/Makefile
+@@ -20,7 +20,7 @@ all:
+ # ---------------------------------------------------------------------------------------------------------------------
+ 
+ clean:
+-	rm -f *.o *.so
++	rm -f *.o *.so *.dll
+ 	rm -rf build32 build64
+ 	rm -rf gui/__pycache__
+ 
+diff --git a/Makefile.mk b/Makefile.mk
+index 9bb1790..3d79b9f 100644
+--- a/Makefile.mk
++++ b/Makefile.mk
+@@ -102,3 +102,4 @@ DEFLIB = $(LIBRARY_PATH) $(LIBRARIES) $(DLL_PATH)
+ 
+ build$(M)/$(wineasio_dll_MODULE).so: $(wineasio_dll_OBJS)
+ 	$(WINECC) $(wineasio_dll_LDFLAGS) -o $@ $(wineasio_dll_OBJS) $(wineasio_dll_LIBRARY_PATH) $(DEFLIB) $(wineasio_dll_DLLS:%=-l%) $(wineasio_dll_LIBRARIES:%=-l%)
++	winebuild -m$(M) --dll --fake-module -E wineasio.dll.spec $(wineasio_dll_OBJS) > build$(M)/wineasio.dll
+-- 
+2.33.0
+
