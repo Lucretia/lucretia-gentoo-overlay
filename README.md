@@ -4,6 +4,9 @@ You will find packages I think are useful and grabbed from various locations or 
 
 ## Packages
 
+* app-emulation/
+  * [wineasio](https://gpo.zugaina.org/AJAX/Ebuild/13005980/View) (Original ebuild)
+    * [1.0.0](./app-emulation/wineasio/wineasio-1.0.0.ebuild)
 * media-libs/
   * [asio-sdk](https://gpo.zugaina.org/AJAX/Ebuild/38403542/View) (Original ebuild)
     * [2.3.3](./media-libs/asio-sdk/../asiosdk/asiosdk-2.3.3.ebuild)
