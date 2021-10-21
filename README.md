@@ -21,6 +21,8 @@ You will find packages I think are useful and grabbed from various locations or 
   * [flamegraph](https://data.gpo.zugaina.org/SoniFrog/media-gfx/flamegraph/) Original ebuild.
     * [1.0](./media-gfx/flamegraph/flamegraph-1.0.ebuild)
 * media-sound/
+  * [cadence](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/cadence/cadence-9999-r7.ebuild) (Original ebuild)
+    * [9999-r8](./media-sound/cadence/cadence-9999-r8.ebuild)
   * [ladish](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/ladish/ladish-1-r2.ebuild) (Original ebuild)
     * [1-r3](./media-sound/ladish/ladish-1-r3.ebuild)
   * [surge](https://github.com/gentoo-audio/audio-overlay/issues/298) (Original ebuild)
