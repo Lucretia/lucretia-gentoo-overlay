@@ -23,6 +23,10 @@ You will find packages I think are useful and grabbed from various locations or 
 * media-sound/
   * [cadence](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/cadence/cadence-9999-r7.ebuild) (Original ebuild)
     * [9999-r8](./media-sound/cadence/cadence-9999-r8.ebuild)
+  * [carla](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/carla/carla-9999.ebuild) (Original ebuild)
+    * [2.3.2](./media-sound/carla/carla-2.3.2.ebuild)
+    * [2.4.1](./media-sound/carla/carla-2.4.1.ebuild)
+    * [9999-r1](./media-sound/carla/carla-9999-r1.ebuild)
   * [ladish](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/ladish/ladish-1-r2.ebuild) (Original ebuild)
     * [1-r3](./media-sound/ladish/ladish-1-r3.ebuild)
   * [surge](https://github.com/gentoo-audio/audio-overlay/issues/298) (Original ebuild)
