@@ -15,18 +15,28 @@ You will find packages I think are useful and grabbed from various locations or 
   * vst3sdk
     * [3.7.1](./media-libs/vst3sdk/vst3sdk-3.7.1.ebuild)
 * media-plugins/
+  * [calf] (Original ebuild from Gentoo)
+    * [0.90.3-r2](./media-media-plugins/calf/calf-0.90.3-r2.ebuild)
   * [gxplugins-lv2](https://gpo.zugaina.org/AJAX/Ebuild/27861632) (Original ebuild)
     * [9999](./media-plugins/gxplugins-lv2/gxplugins-lv2-9999.ebuild)
 * media-gfx/
   * [flamegraph](https://data.gpo.zugaina.org/SoniFrog/media-gfx/flamegraph/) Original ebuild.
     * [1.0](./media-gfx/flamegraph/flamegraph-1.0.ebuild)
 * media-sound/
+  * [amsynth] (Original ebuild from Gentoo)
+    * [1.12.2-r1](./media-sound/amsynth/amsynth-1.12.2-r1.ebuild)
   * [cadence](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/cadence/cadence-9999-r7.ebuild) (Original ebuild)
     * [9999-r8](./media-sound/cadence/cadence-9999-r8.ebuild)
   * [carla](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/carla/carla-9999.ebuild) (Original ebuild)
     * [2.3.2](./media-sound/carla/carla-2.3.2.ebuild)
     * [2.4.1](./media-sound/carla/carla-2.4.1.ebuild)
     * [9999-r1](./media-sound/carla/carla-9999-r1.ebuild)
+  * [fluidsynth] (Original ebuild from Gentoo)
+    * [2.2.3-r1](./media-sound/fluidsynth/fluidsynth-2.2.3-r1.ebuild)
+  * [hydrogen] (Original ebuild from Gentoo)
+    * [1.1.0-r1](./media-sound/hydrogen/hydrogen-1.1.0-r1.ebuild)
+  * [jack-keyboard] (Original ebuild from Gentoo)
+    * [2.7.2-r2](media-sound/jack-keyboard/jack-keyboard-2.7.2-r2.ebuild)
   * [ladish](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/ladish/ladish-1-r2.ebuild) (Original ebuild)
     * [1-r3](./media-sound/ladish/ladish-1-r3.ebuild)
   * [surge](https://github.com/gentoo-audio/audio-overlay/issues/298) (Original ebuild)
