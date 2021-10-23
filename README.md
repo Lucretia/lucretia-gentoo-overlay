@@ -25,6 +25,8 @@ You will find packages I think are useful and grabbed from various locations or 
 * media-sound/
   * [amsynth] (Original ebuild from Gentoo)
     * [1.12.2-r1](./media-sound/amsynth/amsynth-1.12.2-r1.ebuild)
+  * [ardour] (+vst)
+    * [6.9-r1](./media-sound/ardour/ardour-6.9-r1.ebuild)
   * [cadence](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/cadence/cadence-9999-r7.ebuild) (Original ebuild)
     * [9999-r8](./media-sound/cadence/cadence-9999-r8.ebuild)
   * [carla](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/carla/carla-9999.ebuild) (Original ebuild)
