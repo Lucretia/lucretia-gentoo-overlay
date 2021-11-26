@@ -35,6 +35,7 @@ You will find packages I think are useful and grabbed from various locations or 
     * [9999-r1](./media-sound/carla/carla-9999-r1.ebuild)
   * [fluidsynth] (Original ebuild from Gentoo)
     * [2.2.3-r1](./media-sound/fluidsynth/fluidsynth-2.2.3-r1.ebuild)
+    * [2.2.4-r1](./media-sound/fluidsynth/fluidsynth-2.2.4-r1.ebuild)
   * [hydrogen] (Original ebuild from Gentoo)
     * [1.1.0-r1](./media-sound/hydrogen/hydrogen-1.1.0-r1.ebuild)
   * [jack-keyboard] (Original ebuild from Gentoo)
