@@ -33,6 +33,8 @@ You will find packages I think are useful and grabbed from various locations or 
     * [2.3.2](./media-sound/carla/carla-2.3.2.ebuild)
     * [2.4.1](./media-sound/carla/carla-2.4.1.ebuild)
     * [9999-r1](./media-sound/carla/carla-9999-r1.ebuild)
+  * ensemble
+    * [9999](./media-sound/ensembles/ensembles-9999.ebuild)
   * [fluidsynth] (Original ebuild from Gentoo)
     * [2.2.3-r1](./media-sound/fluidsynth/fluidsynth-2.2.3-r1.ebuild)
     * [2.2.4-r1](./media-sound/fluidsynth/fluidsynth-2.2.4-r1.ebuild)
