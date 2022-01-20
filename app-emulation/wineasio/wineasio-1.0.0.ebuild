@@ -14,10 +14,16 @@ KEYWORDS="~x86 ~amd64"
 IUSE=""
 SLOT="0"
 
+FEATURES="preserve-libs"
+BDEPEND="|| ( app-emulation/wine-vanilla app-emulation/wine-staging )"
+
 RDEPEND="media-libs/asiosdk"
 DEPEND="virtual/wine
 		virtual/jack
 		${RDEPEND}"
+
+#WINEASIO_ALL_WINES="$(eselect wine list |tail -n +2 | awk '{ print $2 }')"
+#WINEASIO_SELECTED_WINE="$(eselect wine list |grep '*'|awk '{ print $1 }'|tr -d []`)"
 
 src_prepare()
 {
