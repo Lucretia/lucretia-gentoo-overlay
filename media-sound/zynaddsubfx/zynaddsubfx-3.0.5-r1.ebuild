@@ -33,7 +33,10 @@ DEPEND="
 		x11-libs/libXpm
 	)
 	jack? ( virtual/jack )
-	lash? ( media-sound/lash )
+	lash? ( || (
+		media-sound/lash
+		media-sound/ladish[lash]
+	) )
 	portaudio? ( media-libs/portaudio )
 "
 RDEPEND="${DEPEND}
