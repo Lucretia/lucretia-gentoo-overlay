@@ -7,7 +7,7 @@ inherit gnome2-utils vala meson xdg-utils
 
 if [[ ${PV} == 9999 ]]; then
     EGIT_REPO_URI="https://github.com/SubhadeepJasu/${PN}.git"
-    EGIT_BRANCH="full_remediation"
+    # EGIT_BRANCH="full_remediation"
 	inherit git-r3
 else
 	SRC_URI="https://gitlab.freedesktop.org/${PN}/${PN}/-/archive/${PV}/${P}.tar.gz"
