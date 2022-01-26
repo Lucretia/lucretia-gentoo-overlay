@@ -1,0 +1,25 @@
+From e9f5a9cf10c96ac75aaf619ecc6d8513ddbb6905 Mon Sep 17 00:00:00 2001
+From: "Luke A. Guest" <laguest@archeia.com>
+Date: Wed, 26 Jan 2022 13:29:56 +0000
+Subject: [PATCH] Fix include dir for LASH.
+
+---
+ wscript | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/wscript b/wscript
+index 296a852..c2de9ac 100644
+--- a/wscript
++++ b/wscript
+@@ -495,7 +495,7 @@ def build(bld):
+             ]:
+             liblash.source.append(os.path.join("cdbus", source))
+ 
+-        bld.install_files('${PREFIX}/include/lash', bld.path.ant_glob('lash_compat/liblash/lash/*.h'))
++        bld.install_files('${PREFIX}/include/lash-1.0', bld.path.ant_glob('lash_compat/liblash/lash/*.h'))
+ 
+         # process lash-1.0.pc.in -> lash-1.0.pc
+         bld(
+-- 
+2.34.1
+

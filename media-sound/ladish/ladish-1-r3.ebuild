@@ -45,6 +45,7 @@ PATCHES=(
 	"${FILESDIR}/${P}-disable-gladish.patch"
 	"${FILESDIR}/${P}-configure-libdir.patch"
 	"${FILESDIR}/${P}-add-includes-for-getrlimit.patch"
+	"${FILESDIR}/${P}-fix-include-dir-for-lash.patch"
 )
 
 src_prepare()
