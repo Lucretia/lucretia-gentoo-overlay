@@ -51,6 +51,7 @@ You will find packages I think are useful and grabbed from various locations or 
   * [zyn-fusion](https://github.com/gentoo-audio/audio-overlay/blob/add-zyn-fusion/media-sound/zyn-fusion/zyn-fusion-3.0.5.ebuild) (Original ebuild)
     * [3.0.5](./media-sound/zyn-fusion/zyn-fusion-3.0.5.ebuild)
   * [zynaddsubfx](https://github.com/gentoo-audio/audio-overlay/blob/add-zyn-fusion/media-sound/zynaddsubfx/zynaddsubfx-3.0.5-r1.ebuild) (Original ebuild)
+    * [3.0.6-r1](./media-sound/zynaddsubfx/zynaddsubfx-3.0.6-r1.ebuild)
     * [3.0.5-r1](./media-sound/zynaddsubfx/zynaddsubfx-3.0.5-r1.ebuild)
 * media-video/
   * [ndi-sdk](https://gpo.zugaina.org/AJAX/Ebuild/43486515/View) (Original ebuild)
