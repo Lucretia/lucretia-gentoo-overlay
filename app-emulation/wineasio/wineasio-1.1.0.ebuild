@@ -28,7 +28,7 @@ DEPEND="virtual/wine
 
 src_prepare()
 {
-	epatch "${FILESDIR}/0001-Create-the-fake-DLL-s.patch"
+	epatch "${FILESDIR}/0001-Create-the-fake-DLL-s-${PV}.patch"
 	mkdir ./rtaudio/include
 	# pushd ./rtaudio/include
 	# ln -s "${STEINBERG_DIR}/asiosdk"/common/asio.h
