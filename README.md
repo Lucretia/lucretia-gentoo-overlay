@@ -47,6 +47,7 @@ You will find packages I think are useful and grabbed from various locations or 
     * [2.2.4-r1](./media-sound/fluidsynth/fluidsynth-2.2.4-r1.ebuild)
   * [hydrogen] (Original ebuild from Gentoo)
     * [1.1.0-r1](./media-sound/hydrogen/hydrogen-1.1.0-r1.ebuild)
+    * [9999-r1](./media-sound/hydrogen/hydrogen-9999-r1.ebuild)
   * [jack-keyboard] (Original ebuild from Gentoo)
     * [2.7.2-r2](media-sound/jack-keyboard/jack-keyboard-2.7.2-r2.ebuild)
   * [ladish](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/ladish/ladish-1-r2.ebuild) (Original ebuild)
