@@ -37,9 +37,9 @@ You will find packages I think are useful and grabbed from various locations or 
   * [cadence](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/cadence/cadence-9999-r7.ebuild) (Original ebuild)
     * [9999-r8](./media-sound/cadence/cadence-9999-r8.ebuild)
   * [carla](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/carla/carla-9999.ebuild) (Original ebuild)
-    * [2.3.2](./media-sound/carla/carla-2.3.2.ebuild)
     * [2.4.1](./media-sound/carla/carla-2.4.1.ebuild)
-    * [9999-r1](./media-sound/carla/carla-9999-r1.ebuild)
+    * [2.4.3](./media-sound/carla/carla-2.4.3.ebuild)
+    * [9999-r2](./media-sound/carla/carla-9999-r2.ebuild)
   * ensemble
     * [9999](./media-sound/ensembles/ensembles-9999.ebuild)
   * [fluidsynth] (Original ebuild from Gentoo)
