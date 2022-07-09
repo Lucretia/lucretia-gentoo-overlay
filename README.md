@@ -51,7 +51,7 @@ You will find packages I think are useful and grabbed from various locations or 
   * [jack-keyboard] (Original ebuild from Gentoo)
     * [2.7.2-r2](media-sound/jack-keyboard/jack-keyboard-2.7.2-r2.ebuild)
   * [ladish](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/ladish/ladish-1-r2.ebuild) (Original ebuild)
-    * [1-r3](./media-sound/ladish/ladish-1-r3.ebuild)
+    * [1-r4](./media-sound/ladish/ladish-1-r4.ebuild)
   * [surge](https://github.com/gentoo-audio/audio-overlay/issues/298) (Original ebuild)
     * [1.8.1](./media-sound/surge/surge-1.8.1.ebuild)
   * [zyn-fusion](https://github.com/gentoo-audio/audio-overlay/blob/add-zyn-fusion/media-sound/zyn-fusion/zyn-fusion-3.0.5.ebuild) (Original ebuild)
