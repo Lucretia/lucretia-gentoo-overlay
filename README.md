@@ -14,6 +14,8 @@ You will find packages I think are useful and grabbed from various locations or 
 * media-libs/
   * [asiosdk](https://gpo.zugaina.org/AJAX/Ebuild/38403542/View) (Original ebuild)
     * [2.3.3](./media-libs/asio-sdk/../asiosdk/asiosdk-2.3.3.ebuild)
+  * [portmidi](Original ebuild from Gentoo - masked for removal)
+    * [234-r3](./media-libs/portmidi/portmidi-234-r3.ebuild)
   * vst2sdk
     * [2.4](./media-libs/vst2sdk/vst2sdk-2.4.ebuild)
   * vst3sdk
