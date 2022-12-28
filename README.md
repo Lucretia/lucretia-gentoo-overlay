@@ -50,6 +50,7 @@ You will find packages I think are useful and grabbed from various locations or 
     * [2.2.4-r1](./media-sound/fluidsynth/fluidsynth-2.2.4-r1.ebuild)
     * [2.2.7-r1](./media-sound/fluidsynth/fluidsynth-2.2.7-r1.ebuild)
     * [2.2.8-r1](./media-sound/fluidsynth/fluidsynth-2.2.8-r1.ebuild)
+    * [2.3.0-r1](./media-sound/fluidsynth/fluidsynth-2.3.0-r1.ebuild)
   * [hydrogen] (Original ebuild from Gentoo)
     * [1.1.0-r1](./media-sound/hydrogen/hydrogen-1.1.0-r1.ebuild)
     * [9999-r1](./media-sound/hydrogen/hydrogen-9999-r1.ebuild)
