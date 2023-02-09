@@ -1,0 +1,80 @@
+--- makeresolvedeb_1.5.1_multi.sh	2021-07-01 12:08:41.000000000 +0200
++++ makeresolvedeb.sh	2022-02-23 20:14:54.737362574 +0100
+@@ -151,8 +151,8 @@
+     copy_object ${UNPACK_DIR}/libs/libBlackmagicRawAPI.so ${RESOLVE_BASE_DIR}/bin/
+
+     # Install panel API library
+-    create_directory ${DEB_DIR}/usr/lib/
+-    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/lib/ libDaVinciPanelAPI.so
++    create_directory ${DEB_DIR}/usr/#LIBDIR#/
++    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/#LIBDIR#/ libDaVinciPanelAPI.so
+
+     # Create desktop shortcuts
+     assert_object ${DEB_DIR}/opt/resolve/graphics/DV_Resolve.png
+@@ -237,8 +237,8 @@
+     copy_object ${UNPACK_DIR}/share/default_cm_config.bin ${RESOLVE_BASE_DIR}/share/
+
+     # Extract panel API library
+-    create_directory ${DEB_DIR}/usr/lib
+-    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/lib libDaVinciPanelAPI.so
++    create_directory ${DEB_DIR}/usr/#LIBDIR#/
++    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/#LIBDIR#/ libDaVinciPanelAPI.so
+
+     # BlackmagicRawAPI fixes
+     create_directory ${RESOLVE_BASE_DIR}/bin/BlackmagicRawAPI/
+@@ -329,9 +329,9 @@
+     copy_object ${UNPACK_DIR}/share/default_cm_config.bin ${RESOLVE_BASE_DIR}/share/
+
+     # Extract panel API library
+-    create_directory ${DEB_DIR}/usr/lib
+-    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/lib libDaVinciPanelAPI.so
+-    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/lib libFairlightPanelAPI.so
++    create_directory ${DEB_DIR}/usr/#LIBDIR#/
++    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/#LIBDIR#/ libDaVinciPanelAPI.so
++    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/#LIBDIR#/ libFairlightPanelAPI.so
+
+     # BlackmagicRawAPI fixes for 17.0 & 17.1
+     if [[ "$RESOLVE_VERSION" == 17.0* ]] || [[ "$RESOLVE_VERSION" == 17.1* ]];
+@@ -457,7 +457,7 @@
+ 	echo "[ERROR] DaVinci Resolve installer archive is not executable"
+ 	exit 1
+     fi
+-    NUMEXTRACT=$(./${INSTALLER_ARCHIVE} -i -y -n -C ${UNPACK_DIR} | grep "^Copied " -c)
++    NUMEXTRACT=$(./${INSTALLER_ARCHIVE} -i -y -n -a -C ${UNPACK_DIR} | grep "^Copied " -c)
+     echo "Found ${NUMEXTRACT} objects"
+     if [[ -z "$(ls -A ${UNPACK_DIR})" ]];
+     then
+@@ -589,8 +589,8 @@
+
+ # Verify that we have the commands we need
+ check_command tar
+-check_command fakeroot
+-check_command dpkg-deb
++#check_command fakeroot
++#check_command dpkg-deb
+ echo
+
+ # Create destination directories
+@@ -634,15 +634,15 @@
+
+ # Create Debian package
+ close_deb
+-echo "Creating Debian package"
+-if ! fakeroot dpkg-deb -b ${DEB_DIR} ${DEB_DIR}.deb;
+-then
+-    ERRORS=$((ERRORS+1))
+-fi
++#echo "Creating Debian package"
++#if ! fakeroot dpkg-deb -b ${DEB_DIR} ${DEB_DIR}.deb;
++#then
++#    ERRORS=$((ERRORS+1))
++#fi
+
+ # Clean up
+ remove_directory ${UNPACK_DIR}
+-remove_directory ${DEB_DIR}
++#remove_directory ${DEB_DIR}
+
+ # Report
+ echo
+

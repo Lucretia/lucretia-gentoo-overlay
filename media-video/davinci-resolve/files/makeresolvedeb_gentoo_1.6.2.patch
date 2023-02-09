@@ -1,0 +1,70 @@
+--- makeresolvedeb_1.6.2_multi.sh	2022-11-12 08:58:22.000000000 +0100
++++ makeresolvedeb.sh	2022-11-17 14:16:54.399577310 +0100
+@@ -151,8 +151,8 @@
+     copy_object ${UNPACK_DIR}/libs/libBlackmagicRawAPI.so ${RESOLVE_BASE_DIR}/bin/
+ 
+     # Install panel API library
+-    create_directory ${DEB_DIR}/usr/lib/
+-    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/lib/ libDaVinciPanelAPI.so
++    create_directory ${DEB_DIR}/usr/#LIBDIR#/
++    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/#LIBDIR#/ libDaVinciPanelAPI.so
+ 
+     # Add postinst commands
+     cat >> ${DEB_DIR}/DEBIAN/postinst <<EOF
+@@ -208,8 +208,8 @@
+     copy_object ${UNPACK_DIR}/share/default_cm_config.bin ${RESOLVE_BASE_DIR}/share/
+ 
+     # Extract panel API library
+-    create_directory ${DEB_DIR}/usr/lib
+-    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/lib libDaVinciPanelAPI.so
++    create_directory ${DEB_DIR}/usr/#LIBDIR#/
++    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/#LIBDIR#/ libDaVinciPanelAPI.so
+ 
+     # BlackmagicRawAPI fixes
+     create_directory ${RESOLVE_BASE_DIR}/bin/BlackmagicRawAPI/
+@@ -271,9 +271,9 @@
+     copy_object ${UNPACK_DIR}/share/default_cm_config.bin ${RESOLVE_BASE_DIR}/share/
+ 
+     # Extract panel API library
+-    create_directory ${DEB_DIR}/usr/lib
+-    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/lib libDaVinciPanelAPI.so
+-    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/lib libFairlightPanelAPI.so
++    create_directory ${DEB_DIR}/usr/#LIBDIR#/
++    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/#LIBDIR#/ libDaVinciPanelAPI.so
++    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/#LIBDIR#/ libFairlightPanelAPI.so
+ 
+     # BlackmagicRawAPI fixes for 17.0 & 17.1
+     if [[ "$RESOLVE_VERSION" == 17.0* ]] || [[ "$RESOLVE_VERSION" == 17.1* ]];
+@@ -333,9 +333,9 @@
+     fi
+     
+     # Extract panel API library
+-    create_directory ${DEB_DIR}/usr/lib
+-    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/lib libDaVinciPanelAPI.so
+-    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/lib libFairlightPanelAPI.so
++    create_directory ${DEB_DIR}/usr/#LIBDIR#/
++    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/#LIBDIR#/ libDaVinciPanelAPI.so
++    extract_tgz ${UNPACK_DIR}/share/panels/dvpanel-framework-linux-x86_64.tgz ${DEB_DIR}/usr/#LIBDIR#/ libFairlightPanelAPI.so
+ 
+     # Create common data dir
+     create_directory ${DEB_DIR}/var/BlackmagicDesign/DaVinci\ Resolve
+@@ -512,7 +512,7 @@
+ 	echo "[ERROR] DaVinci Resolve installer archive is not executable"
+ 	exit 1
+     fi
+-    NUMEXTRACT=$(SKIP_PACKAGE_CHECK=1 ./${INSTALLER_ARCHIVE} -i -y -n -C ${UNPACK_DIR_ABS} | grep "^Copied " -c)
++    NUMEXTRACT=$(SKIP_PACKAGE_CHECK=1 ./${INSTALLER_ARCHIVE} -i -y -n -a -C ${UNPACK_DIR_ABS} | grep "^Copied " -c)
+     echo "Found ${NUMEXTRACT} objects"
+     if [[ -z "$(ls -A ${UNPACK_DIR})" ]];
+     then
+@@ -621,8 +621,8 @@
+ 
+ # Verify that we have the commands we need
+ check_command tar
+-check_command fakeroot
+-check_command dpkg-deb
++#check_command fakeroot
++#check_command dpkg-deb
+ echo
+ 
+ # Create destination directories
