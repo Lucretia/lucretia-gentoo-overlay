@@ -74,6 +74,9 @@ Original ebuilds are shown as links, if there is no link it's originally from ``
     * [4.6.2](./media-video/ndi-sdk/ndi-sdk-4.6.2.ebuild)
   * obs-ndi
     * [9999](./media-video/obs-ndi/obs-ndi-9999.ebuild)
+* sci-libs/
+  * cholmod
+    * [3.0.14-r1](sci-libs/cholmod/cholmod-3.0.14-r1.ebuild)
 * sys-process/
   * [nvtop](https://data.gpo.zugaina.org/guru/sys-process/nvtop)
     * [3.0.1](sys-process/nvtop/nvtop-3.0.1.ebuild)
