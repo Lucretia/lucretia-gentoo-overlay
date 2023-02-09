@@ -29,11 +29,13 @@ DEPEND="virtual/wine
 src_prepare()
 {
 	epatch "${FILESDIR}/0001-Create-the-fake-DLL-s-${PV}.patch"
+	epatch "${FILESDIR}/0001-Fix-makefile-for-latest-wine-version-unknown-when-it.patch"
 	mkdir ./rtaudio/include
 	# pushd ./rtaudio/include
 	# ln -s "${STEINBERG_DIR}/asiosdk"/common/asio.h
 	# popd
 	cp "${STEINBERG_DIR}/asiosdk"/common/asio.h ./rtaudio/include/
+	ln -s ./rtaudio/include/asio.h
 
 	multilib_copy_sources
 	eapply_user
@@ -62,7 +64,7 @@ multilib_src_install()
 {
 	case "${ABI}" in
 		"x86")
-			UNIX_DIRS=$(find /usr/$(get_libdir)/wine-*/wine/i386-unix* -type d -print)
+			UNIX_DIRS=$(find /usr/lib/wine-*/wine/i386-unix* -type d -print)
 
 			for d in ${UNIX_DIRS}; do
 				# einfo "d => ${d}"
@@ -71,7 +73,7 @@ multilib_src_install()
 				doexe build32/wineasio.dll.so
 			done
 
-			WIN_DIRS=$(find /usr/$(get_libdir)/wine-*/wine/i386-windows* -type d -print)
+			WIN_DIRS=$(find /usr/lib/wine-*/wine/i386-windows* -type d -print)
 
 			for d in ${WIN_DIRS}; do
 				exeinto ${d}
@@ -81,7 +83,7 @@ multilib_src_install()
 			;;
 
 		"amd64")
-			UNIX_DIRS=$(find /usr/$(get_libdir)/wine-*/wine/x86_64-unix* -type d -print)
+			UNIX_DIRS=$(find /usr/lib/wine-*/wine/x86_64-unix* -type d -print)
 
 			for d in ${UNIX_DIRS}; do
 				exeinto ${d}
@@ -89,7 +91,7 @@ multilib_src_install()
 				doexe build64/wineasio.dll.so
 			done
 
-			WIN_DIRS=$(find /usr/$(get_libdir)/wine-*/wine/x86_64-windows* -type d -print)
+			WIN_DIRS=$(find /usr/lib/wine-*/wine/x86_64-windows* -type d -print)
 
 			for d in ${WIN_DIRS}; do
 				exeinto ${d}
