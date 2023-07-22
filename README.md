@@ -6,6 +6,9 @@ You will find packages I think are useful and grabbed from various locations or 
 
 Original ebuilds are shown as links, if there is no link it's originally from ```::gentoo```. Added USE flags are shown in parentheses.
 
+* app-arch/
+  * [lhasa](https://data.gpo.zugaina.org/seden/app-arch/lhasa)
+    * [0.4.0](./app-arch/lhasa/lhasa-0.4.0.ebuild)
 * app-emulation/
   * [wineasio](https://gpo.zugaina.org/AJAX/Ebuild/13005980/View)
     * [1.0.0](./app-emulation/wineasio/wineasio-1.0.0.ebuild)
