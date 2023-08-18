@@ -15,29 +15,45 @@ EGIT_REPO_URI="https://github.com/Palakis/${PN}.git"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="qt6"
 
-DEPEND=">=media-video/obs-studio-25.0.8-r1
-		dev-qt/qtwidgets:5
-		dev-qt/qtgui:5
+DEPEND="
+	qt6? (
+		dev-qt/qtbase:6
+	)
+        !qt6? (
 		dev-qt/qtcore:5
-"
+	)
+	>=media-video/obs-studio-28
+	~media-video/ndi-sdk-5.5.4"
 RDEPEND="${DEPEND}"
 BDEPEND=""
-# PDEPEND="media-video/v4l2loopback"
 
-PATCHES=(
-	"${FILESDIR}/0001-Fix-for-gentoo.patch"
-)
+# MY_PV="${PV/_rc/-RC}"
+# MY_P="${PN}-${MY_PV}"
 
-# src_prepare() {
-# 	sed -i -e '/include(external\/FindLibObs.cmake)/d' -e 's#../UI#UI#' CMakeLists.txt
-# 	cmake_src_prepare
-# }
+# S="${WORKDIR}/${MY_P}"
+
+src_prepare() {
+	default
+
+	# Patch the correct path to the NDI library into the source
+	sed -e "s:/usr/lib:/usr/lib64:g" \
+		-i "src/${PN}.cpp" || die
+
+	cmake_src_prepare
+}
 
 src_configure() {
-	mycmakeargs=(
-		-DLIBOBS_INCLUDE_DIR="/usr/include/obs/"
-	)
 	cmake_src_configure
+}
+
+src_install() {
+	insinto /usr/lib64/obs-plugins
+	doins "../${PF}_build/rundir/Gentoo/obs-plugins/64bit/${PN}.so"
+
+	insinto "/usr/share/obs/obs-plugins/${PN}"
+	doins -r "../${PF}_build/rundir/Gentoo/data/obs-plugins/${PN}/data/locale"
+
+	dodoc README.md
 }

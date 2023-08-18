@@ -76,7 +76,7 @@ Original ebuilds are shown as links, if there is no link it's originally from ``
     * [18.1.3](./media-video/davinci-resolve/davinci-resolve-18.1.3.ebuild)
   * [ndi-sdk](https://gpo.zugaina.org/AJAX/Ebuild/43486515/View)
     * [4.6.2](./media-video/ndi-sdk/ndi-sdk-4.6.2.ebuild)
-  * obs-ndi
+  * obs-ndi (https://data.gpo.zugaina.org/kripton-overlay/media-video/obs-ndi/)
     * [9999](./media-video/obs-ndi/obs-ndi-9999.ebuild)
 * sci-libs/
   * cholmod
