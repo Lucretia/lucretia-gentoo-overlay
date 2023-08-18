@@ -42,6 +42,7 @@ Original ebuilds are shown as links, if there is no link it's originally from ``
   * ardour (+vst)
     * [7.1-r1](./media-sound/ardour/ardour-7.1-r1.ebuild)
     * [7.2-r1](./media-sound/ardour/ardour-7.2-r1.ebuild)
+    * [7.5-r1](./media-sound/ardour/ardour-7.5-r1.ebuild)
   * [cadence](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/cadence/cadence-9999-r7.ebuild) (+ladish)
     * [9999-r10](./media-sound/cadence/cadence-9999-r10.ebuild)
   * [carla](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/carla/carla-9999.ebuild)
