@@ -74,6 +74,7 @@ Original ebuilds are shown as links, if there is no link it's originally from ``
 * media-video/
   * [davinci-resolve](https://bugs.gentoo.org/718070)
     * [18.1.3](./media-video/davinci-resolve/davinci-resolve-18.1.3.ebuild)
+    * [18.6](./media-video/davinci-resolve/davinci-resolve-18.6.ebuild)
   * [ndi-sdk](https://gpo.zugaina.org/AJAX/Ebuild/43486515/View)
     * [4.6.2](./media-video/ndi-sdk/ndi-sdk-4.6.2.ebuild)
   * obs-ndi (https://data.gpo.zugaina.org/kripton-overlay/media-video/obs-ndi/)
