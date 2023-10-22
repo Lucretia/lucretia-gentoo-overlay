@@ -16,6 +16,10 @@ Original ebuilds are shown as links, if there is no link it's originally from ``
 * dev-cpp/
   * [xsimd](https://data.gpo.zugaina.org/spark-overlay/dev-cpp/xsimd/)
     * [8.1.0](./dev-cpp/xsimd/xsimd-8.1.0.ebuild)
+* dev-games/
+  * [tiled](https://gpo.zugaina.org/dev-games/tiled)
+    * [1.8.6](./dev-games/tiled/tiled-1.8.6-r1.ebuild)
+    * [1.10.2](./dev-games/tiled/tiled-1.10.2.ebuild) - Thanks to [Arch](https://gitlab.archlinux.org/archlinux/packaging/packages/tiled/-/blob/main/PKGBUILD?ref_type=heads) for the help.
 * media-libs/
   * [asiosdk](https://gpo.zugaina.org/AJAX/Ebuild/38403542/View)
     * [2.3.3](./media-libs/asio-sdk/../asiosdk/asiosdk-2.3.3.ebuild)
