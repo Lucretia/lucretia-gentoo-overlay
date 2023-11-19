@@ -56,6 +56,7 @@ Original ebuilds are shown as links, if there is no link it's originally from ``
   * [carla](https://github.com/gentoo-audio/audio-overlay/blob/master/media-sound/carla/carla-9999.ebuild)
     * [2.4.1](./media-sound/carla/carla-2.4.1.ebuild)
     * [2.4.3](./media-sound/carla/carla-2.4.3.ebuild)
+    * [2.5.7](./media-sound/carla/carla-2.5.7.ebuild) (2.6.0-alpha1)
     * [9999-r2](./media-sound/carla/carla-9999-r2.ebuild)
   * ensemble
     * [9999](./media-sound/ensembles/ensembles-9999.ebuild)
