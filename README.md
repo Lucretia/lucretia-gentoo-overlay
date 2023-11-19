@@ -46,6 +46,7 @@ Original ebuilds are shown as links, if there is no link it's originally from ``
   * amsynth (+ladish +vst)
     * [1.12.2-r1](./media-sound/amsynth/amsynth-1.12.2-r1.ebuild)
     * [1.12.4-r1](./media-sound/amsynth/amsynth-1.12.4-r1.ebuild)
+    * [1.13.2-r1](./media-sound/amsynth/amsynth-1.13.2-r1.ebuild)
   * ardour (+vst)
     * [7.1-r1](./media-sound/ardour/ardour-7.1-r1.ebuild)
     * [7.2-r1](./media-sound/ardour/ardour-7.2-r1.ebuild)
